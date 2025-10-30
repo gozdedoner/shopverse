@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🛍️ ShopVerse
+Smart Shopping Made Simple
 
-## Getting Started
+ShopVerse is a modern e-commerce frontend application built with Next.js 15, TypeScript, and Tailwind CSS.
+It delivers a smooth, minimal shopping experience with dark/light mode, cart management, and product details — all powered by the FakeStoreAPI
+.
 
-First, run the development server:
+🌐 Live Demo: https://shopverse-eta.vercel.app
 
-```bash
+⚙️ Tech Stack
+
+Next.js 15 – App Router, Server & Client Components
+
+TypeScript – Type safety & clean architecture
+
+Tailwind CSS – Modern responsive UI
+
+Zustand – Lightweight global state management for Cart
+
+Lucide React – Elegant icons
+
+Vercel – Deployment & Hosting
+
+✨ Features
+
+✅ Product listing with dynamic routing
+✅ Product detail page (Server Component fetching from API)
+✅ Add / remove items from Cart
+✅ Local storage persistence with Zustand
+✅ Dark & Light mode toggle
+✅ Responsive design for all screens
+✅ Smooth animations and shadows
+
+📁 Project Structure
+shopverse/
+├── app/
+│   ├── components/      → Navbar, ProductCard, ThemeToggle
+│   ├── shop/            → Product listing & detail pages
+│   ├── cart/            → Shopping cart page
+│   ├── store/           → Zustand global store
+│   └── layout.tsx       → Root layout
+├── public/              → Static assets
+├── styles/              → Global CSS
+└── README.md
+
+🚀 Getting Started
+
+Clone the project and install dependencies:
+
+git clone https://github.com/gozdedoner/shopverse.git
+cd shopverse
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit → http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧠 What I Learned
 
-## Learn More
+While developing ShopVerse, I improved my understanding of:
 
-To learn more about Next.js, take a look at the following resources:
+State management with Zustand
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dynamic routing & data fetching in Next.js App Router
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+TypeScript types for React components
 
-## Deploy on Vercel
+Vercel deployment flow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Building clean, reusable UI components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+💫 Future Improvements
+
+Add user authentication (NextAuth)
+
+Implement search and filtering
+
+Stripe or PayPal checkout integration
+
+Admin panel for product management
+
+👩‍💻 Author
+
+Gözde Döner
+Frontend Developer | Creative Tech Architect
+
