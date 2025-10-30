@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { persist, createJSONStorage } from "zustand/middleware";
 
 interface CartItem {
   id: number;
@@ -42,8 +42,8 @@ export const useCartStore = create<CartStore>()(
       clearCart: () => set({ items: [] }),
     }),
     {
-      name: "shopverse-cart", // localStorage anahtarı
-      getStorage: () => localStorage,
+      name: "shopverse-cart", // ✅ localStorage anahtarı
+      storage: createJSONStorage(() => localStorage), // ✅ doğru kullanım
     }
   )
 );
